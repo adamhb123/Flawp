@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div id="home-container">
+        <header id="home-header">
+            <ul>
+                <li><a href="{{ url_for('homepage') }}">Home</a></li>
+            </ul>
+            <ul>
+                {% if user_authenticated %}
+                    <li><a href="{{ url_for('login') }}">Login</a></li>
+                {% else %}
+                    <li><a href="{{ url_for('logout') }}">Logout</a></li>
+                {% endif %}
+            </ul>
+        </header>
+    </div>
+{% endblock %}

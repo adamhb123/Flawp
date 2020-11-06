@@ -1,0 +1,31 @@
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@keyframes shinyredanim{
+    from {color: rgba(255,0,0,1);}
+    to {color: rgba(255,0,0,.1);}
+}
+
+.error-message{
+    animation: shinyredanim 2s alternate infinite ease-in;
+    font-size: 1rem;
+}
+.success-message{
+    color: rgba(73, 171, 129, 1);
+    font-size: 1rem;
+    font-weight: bold;
+}
+.credential-form{
+    width:40vw;
+    padding: 5vh 5vw 5vh 5vw;
+}
+#home-header{
+    display:inline-block;
+}
+
+#register-container{
+
+}

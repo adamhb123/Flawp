@@ -1,0 +1,6 @@
+#	USAGE: Add a secret key and rename this file to "config.py"
+SECRET_KEY = 'SECRETKEYHERE'
+SQLALCHEMY_DATABASE_URI = 'sqlite:///test.db'
+SQLALCHEMY_TRACK_MODIFICATIONS = False
+MINIMUM_PASSWORD_LENGTH = 8
+MAXIMUM_PASSWORD_LENGTH = 42

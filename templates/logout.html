@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div id="logout-container">
+        <h3 class="success-message">Successfully logged out...redirecting to homepage.</h3>
+        <script>
+            setTimeout(() => {window.location.replace("{{ url_for('homepage') }}");}, 3000);
+        </script>
+    </div>
+{% endblock %}

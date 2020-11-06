@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+    <div id="login-container">
+        <form action="" class="credential-form center border rounded" method="post">
+            {% if error %}
+                <h3 class="error-message">{{ error }}</h3>
+            {% endif %}
+            {% if fresh_register %}
+                <h3 class="success-message">Registered successfully! Please login below.</h3>
+            {% endif %}
+            <h4>Login:</h4>
+
+            <div class="form-group">
+                <label>Username:</label>
+                <input type="text" class="form-control" name="username" value="{{request.form.username}}">
+            </div>
+            <div class="form-group">
+                <label>Password:</label>
+                <input type="text" class="form-control" name="password" value="{{request.form.password}}">
+            </div>
+            <div class="form-group">
+                <input class="btn btn-primary" type="submit" value="Login">
+            </div>
+
+        </form>
+    </div>
+{% endblock %}
